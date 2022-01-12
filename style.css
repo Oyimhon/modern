@@ -1,0 +1,195 @@
+*{
+ margin: 0;
+ padding: 0;
+ font-family: sans-serif;   
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.navbar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.logo{
+    width: 50px;
+    cursor: pointer;
+    margin: 30px 0;
+}
+.menu-icon{
+    width: 25px;
+    cursor: pointer;
+    display: none;
+}
+ nav{
+     flex: 1;
+     text-align: right;
+ }
+ nav ul li{
+     list-style: none;
+     display: inline-block;
+     margin-right: 30px;
+ }
+ nav ul li a{
+     text-decoration: none;
+     color: #000;
+     font-size: 14px;
+ }
+ nav ul li a:hover{
+     color: #C71585;
+ }
+ .block{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     margin: 100px 0;
+ }
+ .section-one{
+     flex-basis: 40%;
+     position: relative;
+     margin-left: 50px;
+ }
+ .section-one h2{
+     font-size: 54px;
+
+ }
+ .section-one h3{
+     font-size: 30px;
+     color: #707070;
+     font-weight: 100;
+     margin: 20px 0 10px;
+ }
+ .section-one p{
+     font-size: 16px;
+     color: #b7b7b7;
+     font-weight: 100;
+ }
+ .section-one h4{
+     margin: 30px 0;
+     font-size: 20px;
+ }
+ button{
+     border: 0;
+     width: 140px;
+     padding: 12px 10px;
+     outline: none;
+     color: #fff;
+     background: linear-gradient(to right, #fb5283, #ff3527);
+     border-radius: 6px;
+     cursor: pointer;
+ }
+ button img{
+    width: 30px;
+    display: none;
+ }
+ button:hover img{
+     display: block; 
+ }
+ button:hover{
+    width: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+ }
+ .section-one::after{
+     content: ' ';
+     width: 10px;
+     height: 57%;
+     background: linear-gradient(#ff468f, #ff6062);
+     position: absolute;
+     left: -40px;
+     top: 8px;
+ }
+ .section-two{
+     position: relative;
+     flex-basis: 60%;
+     display: flex;
+     align-items: center;
+ }
+ .section-two .controller{
+     width: 90%;
+ }
+ .color-box{
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: linear-gradient(#ff54a2, #ff575a);
+  border-radius: 20px 0 0 20px;
+  height: 100%;
+  width: 80%;
+  z-index: -1;
+  transform: translateX(150px);    
+ }
+ .add-btn img{
+    width: 35px;
+    margin-bottom: 5px;
+ }
+ .add-btn{
+     text-align: center;
+     color: #fff;
+     cursor: pointer;
+ }
+ .social-links{
+    text-align: center;
+ }
+ .social-links img{
+    height: 15px;
+    margin: 20px;
+    cursor: pointer;
+ }
+ @media only screen and (max-width:700px) {
+
+    nav ul{
+        width: 100%;
+        background: linear-gradient(#ff54a2, #ff575a);
+        position: absolute;
+        top: 75px;
+        right: 0;
+        z-index: 2;
+    }
+    nav ul li{
+        display: block;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+    nav ul li a{
+        color: #fff;
+    }
+    .menu-icon{
+        display: block;
+    }
+    #menuList{
+        overflow: hidden;
+        transition: 0.5s;
+    }
+    .block{
+        flex-direction: column-reverse;
+        margin: 50px 0;
+    }
+    .section-two{
+        flex-basis: 100px;
+        margin-bottom: 50px;
+    }
+    .section-two .controller{
+      width: 77%;  
+    }
+    .color-box{
+        transform: translateX(75px);
+    }
+    .section-one{
+        flex-basis: 100%; 
+    }
+    .section-one h2{
+        font-size: 35px;
+    }
+    .section-one h3{
+        font-size: 15px;
+    }
+    
+
+ }
